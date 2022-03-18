@@ -1,0 +1,21 @@
+version: 2.0
+
+phases:
+  pre_build:
+    run-as: Linux-user-name
+    on-failure: ABORT | CONTINUE
+    commands:
+      - npm install
+
+  build:
+    run-as: Linux-user-name
+    on-failure: ABORT | CONTINUE
+    commands:
+      - npm run build
+
+artifacts:
+  files:
+    - '**/*'
+  name: artifact-name
+  discard-paths: no | yes
+  base-directory: build
