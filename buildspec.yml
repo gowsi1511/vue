@@ -6,8 +6,6 @@ phases:
       - npm install
 
   build:
-    run-as: Linux-user-name
-    on-failure: ABORT | CONTINUE
     commands:
       - npm run build
 
