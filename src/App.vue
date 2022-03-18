@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to dev"/>
+  <HelloWorld msg="Welcome to dev branch"/>
 </template>
 
 <script>
