@@ -8,5 +8,5 @@ jobs:
          with:
             owner: gowsi1511
             repo: vue
-            github_token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+            github_token: ${{ secrets.G_PERSONAL_ACCESS_TOKEN }}
             workflow_file_name: blank.yml
