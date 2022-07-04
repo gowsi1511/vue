@@ -1,0 +1,12 @@
+name: Cypress Tests
+on: [push] 
+jobs: 
+   cypress-run:
+     runs-on: ubuntu-latest
+     steps:
+       - uses: convictional/trigger-workflow-and-wait@v1.6.1
+         with:
+            owner: gowsi1511
+            repo: vue
+            github_token: ${{ secrets.GITHUB_PERSONAL_ACCESS_TOKEN }}
+            workflow_file_name: blank.yml
