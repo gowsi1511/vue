@@ -7,6 +7,6 @@ jobs:
        - uses: convictional/trigger-workflow-and-wait@v1.6.1
          with:
             owner: gowsi1511
-            repo: vue
+            repo: cypressone
             github_token: ${{ secrets.G_PERSONAL_ACCESS_TOKEN }}
             workflow_file_name: blank.yml
